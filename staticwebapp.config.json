@@ -8,7 +8,7 @@
       },
 
       "globalHeaders": {
-        "Access-Control-Allow-Origin": "zealous-smoke-00fdee710​.4​.azurestaticapps​.net",
+        "Access-Control-Allow-Origin": "ambitious-desert-08d1bcb10.4.azurestaticapps.net",
         "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
   
         "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
