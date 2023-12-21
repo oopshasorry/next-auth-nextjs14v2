@@ -17,8 +17,8 @@ export default async function AuthRoute() {
         <div className="w-screen h-screen flex items-center justify-center">
             <Card>
                 <CardHeader>
-                    <CardTitle>Please sign in</CardTitle>
-                    <CardDescription>To access the private page you have to be authenticated</CardDescription>
+                    <CardTitle>HELLO!!</CardTitle>
+                    <CardDescription>Meow</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <div className="flex flex-col">
