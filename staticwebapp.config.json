@@ -5,17 +5,7 @@
 
     "platform": {
         "apiRuntime": "node:18"
-      },
-
-      "globalHeaders": {
-        "Access-Control-Allow-Origin": "ambitious-desert-08d1bcb10.4.azurestaticapps.net",
-        "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
-        
-        "content-security-policy": "frame-ancestors 'self';  upgrade-insecure-requests",
-        "X-Frame-Options": "SAMEORIGIN",
-        "X-Permitted-Cross-Domain-Policies": "none",
-        "Referrer-Policy":"no-referrer",
-        "X-Content-Type-Options": "nosniff",
-        "Permissions-Policy": "autoplay=()"
       }
+
+
 }
