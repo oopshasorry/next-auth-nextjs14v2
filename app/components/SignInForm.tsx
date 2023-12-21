@@ -6,9 +6,11 @@ import { Label } from "@/components/ui/label";
 import { toast } from "@/components/ui/use-toast";
 import { signIn } from "next-auth/react";
 import { useState } from "react";
+import { useFormStatus } from "react-dom";
 
 export default function SignInForm() {
     const [email, setEmail] = useState<null | string>(null);
+    const { pending } = useFormStatus();//broken
 
     async function SignInWithEmail() {
         const signInResult = await signIn("email", {
@@ -23,10 +25,10 @@ export default function SignInForm() {
                 variant: "destructive",
             });
         }
-        
+        console.log(pending);
         return toast ({
             title: "Check your email",
-            description: "a magic link has been sent to you"
+            description: "a magic link has been sent to you"+ {pending},
         })
     }
     return (
@@ -35,7 +37,7 @@ export default function SignInForm() {
                 <Label>Email</Label>
                 <Input onChange={(e) => setEmail(e.target.value)}name="email" type="email" placeholder="name@example.com"></Input>
             </div>
-            <Button type="submit" className="mt-4 w-full">Login with email</Button>
+            <Button type="submit" className="mt-4 w-full" aria-disabled={pending}>Login with email</Button>
         </form>
     );
 }
