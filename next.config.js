@@ -14,7 +14,6 @@ const cspHeader = `
     frame-ancestors 'none';
     block-all-mixed-content;
     upgrade-insecure-requests;
-    X-Frame-Options 'SAMEORIGIN';
 `
  
 module.exports = {
